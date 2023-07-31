@@ -1,0 +1,444 @@
+.container {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    flex-basis: 40%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #3e64ff;
+}
+
+.navbar .menus {
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+}
+
+.navbar .menus .item {
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: 20px;
+    list-style-type: none;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: border 0.1s;
+}
+
+.menus .item:hover {
+    border-bottom: 2px solid #3F64FF;
+}
+
+.intro {
+    display: flex;
+    position: relative;
+}
+
+.intro .left {
+    flex-basis: 50%;
+    background-color: #EBEFFF;
+    height: 800px;
+}
+
+.intro .right {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    height: 800px;
+}
+
+.intro .center {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center .introText{
+    font-family: 'Poppins', sans-serif;
+    color: #3F64FF;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.center .name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.center .role{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.center .role .roleDesc {
+    color: #3F64FF;
+}
+
+.arrowDown {
+    color: #3e64ff;
+    font-size: 60px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: shake 0.5s;
+    animation-iteration-count: 5;
+}
+
+.arrowDown:hover {
+    transform: scale(1.1);
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .image {
+    flex-basis: 50%;
+    display: flex;
+    background-color: #FAF9FA;
+    height: 500px;
+    justify-content: flex-end;
+}
+
+.image .img {
+    height: 500px;
+    width: 500px;
+}
+
+.about .aboutMe {
+    flex-basis: 50%;
+    height: 500px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: #ffffff;
+}
+
+.aboutMe .aboutMeText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.aboutMe .objective {
+    font-size: 14px;
+    color: #999999;
+    margin: 30px 0px;
+    font-family: 'Poppins';
+    width: 80%;
+}
+
+.aboutMe .detail {
+    width: 60%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    flex-wrap: wrap;
+}
+
+.detail .prop {
+    font-family: 'Montserrat';
+    flex-basis: 40%;
+    font-weight: 600;
+}
+
+.detail .value {
+    font-family: 'Montserrat';
+    flex-basis: 60%;
+    color: #999999;
+}
+
+.aboutMe .cv button {
+    background-color: #3F64FF;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    border-radius: 40px;
+    border: 1px solid #3e64ff !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.aboutMe .cv button:hover {
+    transform: scale(1.05);
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 65px;
+    background-color: #ffffff;
+}
+
+.resume .sections {
+    flex-basis: 30%;
+    padding-left: 20px;
+}
+
+.resume .scroller {
+    flex-basis: 70%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.sections .section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px;
+    cursor: pointer;
+    transition: color,margin 0.3s ease;
+}
+
+.sections .section:hover{
+    color: #3e64ff;
+    margin-left: 20px;
+}
+
+.education, .experience, .skills {
+    margin-bottom: 70px;
+}
+
+.education .title, 
+.experience .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #3e64ff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.education .educationContainer,
+.experience .experienceContainer,
+.awards .awardContainer {
+    flex-wrap: wrap;
+    display: flex;
+    width: 95%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.educationContainer .icon,
+.experienceContainer .icon,
+.awardContainer .icon {
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 32px;
+    color: #3F64FF;
+}
+
+.experienceContainer .icon .companyLogo{
+    width: 50px;
+    height: 50px;
+}
+
+.educationContainer .details,
+.experienceContainer .details,
+.awardContainer .details
+ {
+    flex-basis: 90%;
+}
+
+.details .year {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #3F64FF;
+    font-size: 16px;
+}
+
+.details .degree,
+.details .company {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details .college,
+.details .designation {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details .grades,
+.details .responsibilities {
+    font-family: 'Poppins', sans-serif;
+    color: #999999;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.skills .title,
+.awards .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #3e64ff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillsContainer .skill {
+    flex-basis: 50%;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 2px 10px;
+}
+
+.skillsContainer .details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.details .skillName {
+    flex-basis: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details .percentage {
+    flex-basis: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skill .bar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar .filled {
+    background-color: #3F64FF;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.bar .empty {
+    background-color: #E6E6E6;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.awardContainer .details .year {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #3F64FF;
+    font-size: 16px;
+}
+
+.awardContainer .details .name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.awardContainer .details .company {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #999999;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contactMe .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.channels {
+    display: flex;
+    justify-content: center;
+}
+
+.channels .channel {
+    flex-basis: 22%;
+    margin: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    padding: 20px;
+}
+
+.channel .channelLogo {
+    font-size: 50px;
+    color: #3F64FF;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+}
+
+.channel .channelText {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.channel .channelValue {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    color: #999999;
+    text-align: center;
+    word-break: break-word;
+}
+
+@keyframes shake {
+    0% { transform: translateY(-2px); }
+    50% { transform: translateY(2px);  }
+    100% { transform: translateY(0px);  }
+  }
