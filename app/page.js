@@ -2,10 +2,10 @@
 
 import "./page.css";
 import Image from "next/image";
-import pic from "../public/pic.jpeg";
+import pic from "../public/profileImage.jpeg";
 import profileData from "./profileData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faTrophy, faCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faIdCard, faCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
 
 export default function Home() {
@@ -103,7 +103,7 @@ export default function Home() {
     return (
       <div className="awardContainer" key={award.key}>
         <div className="icon">
-          <FontAwesomeIcon icon={faTrophy} />
+          <FontAwesomeIcon icon={faIdCard} />
         </div>
         <div className="details">
           <div className="year">{award.year}</div>
@@ -195,7 +195,7 @@ export default function Home() {
             Skills
           </div>
           <div className="section" onClick={() => scrollToSection(awardsRef)}>
-            Awards
+            Trainings
           </div>
         </div>
         <div className="scroller">
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="skillsContainer">{skillsHtml}</div>
           </div>
           <div className="awards" ref={awardsRef}>
-            <div className="title">Awards</div>
+            <div className="title">Trainings</div>
             {awardsHtml}
           </div>
         </div>

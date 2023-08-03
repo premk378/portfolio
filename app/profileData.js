@@ -1,8 +1,4 @@
-import ot from "../public/opentext.png";
-import dbs from "../public/dbs.png";
-import deloitte from "../public/deloitte.png";
-import cts from "../public/cognizant.png";
-import tcs from "../public/tcs.png";
+import ehnote from "../public/ehnote.png";
 
 import {
   faMapLocation,
@@ -12,198 +8,107 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const profileData = {
-  name: "Prem Kumar Yadav",
+  name: "Priti Kumari",
   role: "Web Developer",
   objective:
-    "Full stack web developer with around 6 years of experience in web development. My expertise ranges from front-end UI designing to REST APIs development. Proficient in Java, Spring Boot, SQL as well as Javascript frameworks ReactJS and Angular.",
+    "I am an aspiring web developer, self-motivated and seeking for a career opportunity to utilize my skills, practical trainings and provide significant contribution to the success of the employer effectively. Willingness to work a challenging environment with a purpose of growth, knowledge and creativity, in order to achieve organizational goals.",
   details: [
     {
       key: "name",
       prop: "Name",
-      value: "Prem Kumar Yadav",
+      value: "Priti Kumari",
     },
     {
       key: "dob",
       prop: "Date of Birth",
-      value: "June 29 1995",
+      value: "January 12 2000",
     },
     {
       key: "address",
       prop: "Address",
-      value: "Hyderabad, 500089",
+      value: "Hyderabad, 500032",
     },
     {
       key: "email",
       prop: "Email",
-      value: "prem.aec67@gmail.com",
+      value: "im.pritikr@gmail.com",
     },
     {
       key: "phone",
       prop: "Phone",
-      value: "7001384343",
+      value: "9999999999",
     },
   ],
   educationDetails: [
     {
-      key: "btech",
-      year: "2013 to 2017",
-      degree: "Bachelor of Technology in Computer Science",
-      college: "Asansol Engineering College",
-      grades: "CGPA: 8.04",
+      key: "bca",
+      year: "2018 to 2022",
+      degree: "Bachelor of Computer Applications",
+      college: "Tilka Manjhi Bhagalpur University",
+      grades: "Percentage: 68%",
     },
     {
-      key: "jnv12",
-      year: "2012 to 2013",
-      degree: "Class XII",
-      college: "Jawahar Navodaya Vidyalaya",
-      grades: "Percentage: 91.6%",
+      key: "ru12",
+      year: "2016 to 2018",
+      degree: "Intermediate",
+      college: "Rajkiye Ucch Vidyalaya, Jamui",
+      grades: "Percentage: 58.17%",
     },
     {
-      key: "jnv10",
-      year: "2010 to 2011",
+      key: "dav10",
+      year: "2015 to 2016",
       degree: "Class X",
-      college: "Jawahar Navodaya Vidyalaya",
-      grades: "CGPA: 10.0",
+      college: "DAV Public School, Pandaveshwar",
+      grades: "CGPA: 7.0",
     },
   ],
   experienceDetails: [
     {
-      key: "ot",
-      company: "OpenText",
-      period: "May 2023 to Present",
-      designation: "Sr. Software Engineer",
+      key: "ehnote",
+      company: "EHNOTE",
+      period: "June 2023 to Present",
+      designation: "Technical Support Associate",
       responsibilities: [
-        "Maintain ReactJS components of the application UI",
-        "Made the project compliant with Content Security Policy",
+        "Design and Develop UI for the application.",
+        "Providing required assistance to end users of the application.",
       ],
-      logo: ot,
-    },
-    {
-      key: "dbs",
-      company: "DBS Tech India",
-      period: "Jan 2022 to May 2023",
-      designation: "Specialist Full Stack Developer",
-      responsibilities: [
-        "Owned GCIN module of the corporate KYC application.",
-        "External company search integration into the KYC application.",
-        "Develop and enhance UI Components in Angular 7, REST APIs in Spring Boot.",
-        "Delivered several end to end BPMN workflows.",
-      ],
-      logo: dbs,
-    },
-    {
-      key: "deloitte",
-      company: "Deloitte",
-      period: "Jan 2021 to Dec 2021",
-      designation: "Consultant",
-      responsibilities: [
-        "Configure application for various Insurance carriers.",
-        "Automate form submission using Puppeteer and NodeJS.",
-      ],
-      logo: deloitte,
-    },
-    {
-      key: "cts",
-      company: "Cognizant",
-      period: "April 2020 to Dec 2020",
-      designation: "Programmer Analyst",
-      responsibilities: [
-        "Developing and maintaining REST APIs in an Spring Boot Application.",
-        "Writing Batch jobs using Spring Batch.",
-        "Automated transalation validation of the application for different languages.",
-      ],
-      logo: cts,
-    },
-    {
-      key: "tcs",
-      company: "Tata Consultancy Services",
-      period: "August 2017 to March 2020",
-      designation: "Systems Engineer",
-      responsibilities: [
-        "Understanding business requirements, develop and maintain features for a Health Insurance Application.",
-        "Writing REST APIs in Spring based Application.",
-        "Developing UI features using HTML and Angular JS.",
-      ],
-      logo: tcs,
-    },
+      logo: ehnote,
+    }
   ],
   skills: [
     {
       key: "java",
       name: "Java",
-      percentage: 85,
-    },
-    {
-      key: "sb",
-      name: "Spring Boot",
-      percentage: 80,
-    },
-    {
-      key: "jpa",
-      name: "JPA",
-      percentage: 75,
+      percentage: 60,
     },
     {
       key: "html",
       name: "HTML",
-      percentage: 85,
+      percentage: 75,
     },
     {
       key: "css",
       name: "CSS",
-      percentage: 85,
+      percentage: 75,
     },
     {
       key: "js",
       name: "Javascript",
-      percentage: 85,
-    },
-    {
-      key: "angular",
-      name: "Angular",
-      percentage: 85,
-    },
-    {
-      key: "react",
-      name: "ReactJS",
-      percentage: 60,
-    },
-    {
-      key: "next",
-      name: "NextJS",
-      percentage: 50,
+      percentage: 70,
     },
     {
       key: "sql",
       name: "SQL",
-      percentage: 90,
+      percentage: 80,
     },
   ],
   awards: [
     {
       key: "st1",
-      year: "December 2022",
-      name: "Super Techie",
-      company: "DBS Tech India",
-    },
-    {
-      key: "st2",
-      year: "July 2022",
-      name: "Super Rookie",
-      company: "DBS Tech India",
-    },
-    {
-      key: "aa1",
-      year: "August 2021",
-      name: "Applause Award",
-      company: "Deloitte",
-    },
-    {
-      key: "aa2",
-      year: "July 2021",
-      name: "Applause Award",
-      company: "Deloitte",
-    },
+      year: "December 2022 - May 2023",
+      name: "Full Stack Development Training",
+      company: "JSpiders",
+    }
   ],
   channels: [
     {
@@ -215,19 +120,19 @@ const profileData = {
     {
       key: "contact",
       text: "Contact Number",
-      value: "7001384343",
+      value: "9999999999",
       icon: faSquarePhone,
     },
     {
       key: "email",
       text: "Email Address",
-      value: "prem.aec67@gmail.com",
+      value: "im.pritikr@gmail.com",
       icon: faEnvelope,
     },
     {
       key: "linkedin",
       text: "LinkedIn",
-      value: "https://www.linkedin.com/in/premk378/",
+      value: "https://www.linkedin.com/in/priti-kumari-40b24b226/",
       icon: faComment,
     },
   ],
